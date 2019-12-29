@@ -69,6 +69,8 @@ public class CityMapBuilder : MonoBehaviour
         {
             CreateObstacle(x, z).transform.localPosition = new Vector3(x, 0, z);
         }
+
+        UIController.Instance.InitScore();
     }
 
     protected virtual GameObject CreateBuilding()
@@ -89,6 +91,7 @@ public class CityMapBuilder : MonoBehaviour
         _obj.transform.parent = GameObject.FindWithTag("obstacle_root").transform;
 
         _obj.GetComponent<Obstacle>().ObstacleCounter = CombinedMatrix[x,z] - 1;
+        UIMgr.Instance.TargetCount += CombinedMatrix[x,z] - 1;
 
         return _obj;
     }

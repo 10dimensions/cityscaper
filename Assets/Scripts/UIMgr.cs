@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIMgr : MonoBehaviour
 {   
@@ -9,7 +10,7 @@ public class UIMgr : MonoBehaviour
 
     public GameObject MainUIPanel;
 
-    private int _targetCount;
+    public int _targetCount;
     public int TargetCount  { get{return _targetCount; }
                               set{_targetCount = value;}}
 
@@ -25,19 +26,9 @@ public class UIMgr : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     } 
 
-    public void ResetTimerAndCounter()
+    public void ReLoadGame()
     {
-        
-    }
-
-    public void ToggleNight()
-    {
-
-    }
-
-    public void ToggleDay()
-    {
-
+        SceneManager.LoadScene("level");
     }
     
 }
