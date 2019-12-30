@@ -1,7 +1,7 @@
 # cityscaper
 
-Engine: Unity 2019.1.1 f1
-Link to Windows Executable [link] 
+- Engine: Unity 2019.1.1 f1
+- Link to Windows Executable [link] 
 
 ## Summary
 
@@ -12,8 +12,8 @@ A Maze-like 3D Game, which rule-based Matrix level Generation.
 <img src="https://github.com/10dimensions/cityscaper/blob/master/img2.JPG" width="160">
 </p>
 
-Matrix 1 represents Road(0) and Building(1).
-Matrix 2 represents obstacles number (representing number of times the obstacle must be hit).
+- Matrix 1 represents Road(0) and Building(1).
+- Matrix 2 represents obstacles number (representing number of times the obstacle must be hit).
 
 ## Objectives:
 
